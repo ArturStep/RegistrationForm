@@ -1,0 +1,62 @@
+@import "../../styles/stylesVar";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 700px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  background-color: rgb(34, 44, 47);
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.signUpSteps {
+  margin-top: 40px;
+
+  color: $fontColor;
+  background-color: #9a9ba1;
+
+  font-family: $fontFamily;
+
+  box-shadow: 0 0 10px 2px rgba(93, 124, 106, 0.87);
+  button {
+    padding: 15px 10px;
+    width: 150px;
+
+    border: 1px solid #2c6741;
+    font-weight: 550;
+  }
+}
+
+.selectStep {
+  background-color: $backgroundColor;
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  .container {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+@media only screen and  (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .signUpSteps {
+    button {
+      width: 140px;
+    }
+  }
+}

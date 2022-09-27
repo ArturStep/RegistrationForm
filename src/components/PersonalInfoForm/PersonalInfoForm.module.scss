@@ -1,0 +1,149 @@
+@import "../SignUpInfoForm/SignUpInfoFrom.module";
+
+.personalInfoForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: $fontFamily;
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.personalInfoName {
+  flex-direction: column;
+}
+
+.sex {
+  margin: 5px;
+
+  color: $fontColor;
+
+  label {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  input {
+    margin: 10px 0 10px 10px;
+  }
+}
+
+.sexRadio {
+  display: flex;
+  flex-direction: row;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+
+  color: $fontColor;
+
+  label {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  input {
+    margin: 10px 0 5px 5px;
+    padding: 3px;
+    width: 150px;
+  }
+}
+
+.favoriteOceans {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+
+  color: $fontColor;
+  font-size: 20px;
+
+  select {
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 150px;
+
+    border-radius: 6px;
+    border: 1px solid #9a9ba1;
+
+    font-size: 14px;
+  }
+
+  option {
+    color: black;
+  }
+}
+
+select:active, select:focus {
+  outline: none
+}
+
+.hobby {
+  margin: 5px;
+  width: 250px;
+
+  color: $fontColor;
+
+  label {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  input {
+    margin: 10px 0 0 5px;
+  }
+}
+
+.hobbyCheckbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.personalInfoBtn {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    font-family: $fontFamily;
+  }
+}
+
+.changeBtn {
+  margin: 30px auto 0 auto;
+  padding: 5px;
+
+  background-color: #9a9ba1;
+  color: #3d3d3d;
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  &:hover {
+    background-color: #aaaab0;
+  }
+}
+
+.completeBtn {
+  margin: 20px auto 0 auto;
+  padding: 5px;
+  width: 100px;
+
+  border-radius: 6px;
+  background-color: $backgroundColor;
+  color: $fontColor;
+
+  font-family: $fontFamily;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $btnHover;
+  }
+}
